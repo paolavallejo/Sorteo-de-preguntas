@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sorteo de Preguntas</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteo de Preguntas</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<div class="container">
-<h1>Sorteo de Preguntas</h1>
-<input id="studentName" placeholder="Nombre del estudiante">
-<button id="drawBtn" onclick="assignQuestions()">Realizar sorteo</button>
-<p id="drawResult"></p>
-<div id="questionsContainer"></div>
-<button id="saveBtn" style="display:none" onclick="saveAnswers()">Guardar respuestas</button>
-</div>
-<script src="app.js"></script>
+
+    <div class="container">
+
+        <h1>Sorteo Aleatorio de Preguntas</h1>
+
+        <div class="card">
+
+            <label for="studentName">
+                Nombre del estudiante
+            </label>
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Ingrese su nombre completo">
+
+            <button
+                id="drawBtn"
+                onclick="assignQuestions()">
+                Realizar sorteo
+            </button>
+
+            <p id="drawResult"></p>
+
+        </div>
+
+        <div id="questionsContainer"></div>
+
+        <button
+            id="saveBtn"
+            onclick="saveAnswers()"
+            style="display:none;">
+            Guardar respuesta
+        </button>
+
+    </div>
+
+    <script src="app.js"></script>
+
 </body>
+
 </html>
