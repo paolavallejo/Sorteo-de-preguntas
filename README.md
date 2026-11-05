@@ -1,1 +1,1 @@
-# Sorteo-de-preguntas
+Configurar SHEET_ID, DRIVE_FOLDER_ID y URL del Apps Script. Hojas requeridas: BancoPreguntas y Respuestas.
